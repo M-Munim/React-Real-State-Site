@@ -17,19 +17,19 @@ const Header = () => {
   return (
     <section className="h-wrapper">
       <div className="flexBetween paddings h-container innerWidth">
-        <img src="./logo.png" alt="logo" width={100} />
+        <img src="./logo.png" alt="logo" width={200} />
         {/* <OutsideClickHandler onOutsideClick={() => {
           setMenuOpened(false)
         }}> */}
-          <div className="h-menu flexCenter" style={getMenuStyles(menuOpened)}>
-            <a href="" >Residencies</a>
-            <a href="">Our Value</a>
-            <a href="">Contact Us</a>
-            <a href="">Get Started</a>
-            <button className='button'>
-              <a href="">Contact</a>
-            </button>
-          </div>
+        <div className="h-menu flexCenter" style={getMenuStyles(menuOpened)}>
+          <a href="#residencies" >Residencies</a>
+          <a href="#value">Our Value</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#getStarted">Get Started</a>
+          <button className='button'>
+            <a href="#contact">Contact</a>
+          </button>
+        </div>
         {/* </OutsideClickHandler> */}
 
         <div className="menu-icon" onClick={() => setMenuOpened((prev) => !prev)}>
